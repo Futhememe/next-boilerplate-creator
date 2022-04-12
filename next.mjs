@@ -4,6 +4,7 @@ let projectName = await question("What's the project name ?: ")
 
 let appContent = await fs.readFile('./templates/_app.tsx')
 let themeContent = await fs.readFile('./templates/theme.tsx')
+let documentContent = await fs.readFile('./templates/_document.tsx')
 
 cd('..')
 
@@ -24,6 +25,8 @@ cd('src')
 await fs.writeFile('theme.tsx', themeContent)
 
 cd('pages')
+
+await fs.writeFile('_document.tsx', documentContent)
 
 await $`rm _app.tsx`
 
