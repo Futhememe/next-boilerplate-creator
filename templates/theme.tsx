@@ -3,8 +3,8 @@ import { createBreakpoints } from '@chakra-ui/theme-tools'
 
 const fonts = { 
   // PUT YOUR FONTS HERE
-  body: 'Sora, -apple-system, system-ui, sans-serif',
-  heading: 'Sora'
+  body: "'Inter', sans-serif",
+  heading: 'Inter'
 }
 
 export const colors = {
