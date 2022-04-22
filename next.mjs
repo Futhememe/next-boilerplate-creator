@@ -26,7 +26,7 @@ await $`rmdir styles`
 
 await $`yarn add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^6`
 
-await $`yarn add react-i18next i18next`
+await $`yarn add i18next react-i18next ni18n`
 
 cd('src')
 await fs.writeFile('theme.tsx', themeContent)
